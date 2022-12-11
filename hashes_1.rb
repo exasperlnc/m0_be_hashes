@@ -1,5 +1,5 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,23 +7,24 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+#p zoo
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+foods["grapes"]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods["watermelons"] = 14
+puts foods
 
 
 #-------------------
@@ -36,17 +37,23 @@ p zoo
 
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+email = {
+  from: 'emtlogancole@gmail.com',
+  to: 'jimmyjohn@gmail.com',
+  date: 'December 10, 2022, 6:15 am',
+  subject: 'Word up, brosef',
+  securtiy: "standard"
+}
 # Write code that prints your email hash to the terminal.
-
+puts email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.values
 
 
 #-------------------
@@ -85,7 +92,7 @@ posts = [
 ]
 
 p posts
-p posts[0]
+# p posts[0]
 
 
 # The code snippet above shows an Array with 2 elements. Each element in the Array is a 
@@ -97,3 +104,27 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+emails = [
+  {
+    from: 'emtlogancole@gmail.com',
+  to: 'billburt@gmail.com',
+  date: 'December 15, 2022, 9:00 am',
+  subject: 'Calamari Questions',
+  securtiy: "standard"
+  } ,
+  {
+    from: 'emtlogancole@gmail.com',
+    to: 'gilligan@gmail.com',
+    date: 'January 14, 1982, 2:15 pm',
+    subject: 'Successful Time Traveling',
+    securtiy: "standard"
+  } ,
+  {
+    from: 'emtlogancole@gmail.com',
+    to: 'jimmyjohn@gmail.com',
+    date: 'December 10, 2022, 6:15 am',
+    subject: 'Word up, brosef',
+    securtiy: "standard"
+  }
+]
+puts emails
